@@ -3,7 +3,6 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import locale
 
-# Встановлення локалі для української мови
 locale.setlocale(locale.LC_ALL, 'uk_UA.UTF-8')
 
 # Функція отримання даних із сайту
