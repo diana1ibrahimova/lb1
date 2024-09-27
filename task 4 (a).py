@@ -15,6 +15,6 @@ response = requests.get(url, params=parametrs)
 if response.status_code == 200:
     users = response.json()['result']
     for user in users:
-        print(f"User: {user['user']['first_name']}, ID: {user['user']['id']}")
+        print(f"User: {user['user']['first_name']}")
 else:
     print(f"Отримати користувачів не вдалося, помилка {response.status_code}: {response.text}")
